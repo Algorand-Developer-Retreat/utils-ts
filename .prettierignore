@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build output
+dist
+build
+*.tsbuildinfo
+
+# Generated files
+pnpm-lock.yaml
+
+# Coverage reports
+coverage
+
+# Environment files
+.env
+.env.*
+
+# IDE
+.vscode
+.idea
+
+# Misc
+.DS_Store
+*.log
+
+# Package manager
+.npmrc 

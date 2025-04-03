@@ -1,0 +1,61 @@
+{
+  "name": "@txnlab/utils-ts-monorepo",
+  "private": true,
+  "description": "Monorepo for @txnlab/utils-ts library providing Algorand development utilities for asset handling and formatting",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter @txnlab/utils-ts build",
+    "build:examples": "pnpm --filter @txnlab/utils-ts-examples build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
+    "typecheck": "pnpm --filter @txnlab/utils-ts typecheck",
+    "cipublish": "node scripts/publish.js",
+    "fresh-install": "rm -rf node_modules packages/*/node_modules examples/*/node_modules && pnpm install"
+  },
+  "keywords": [
+    "algorand",
+    "asset",
+    "utilities",
+    "formatting",
+    "typescript",
+    "bignumber",
+    "precision"
+  ],
+  "author": "TxnLab Inc.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Algorand-Developer-Retreat/utils-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Algorand-Developer-Retreat/utils-ts/issues"
+  },
+  "homepage": "https://github.com/Algorand-Developer-Retreat/utils-ts#readme",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@tanstack/config": "0.18.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import-x": "^4.6.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-unicorn": "^58.0.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.1",
+    "typescript": "^5.5.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "@txnlab/utils-ts": "workspace:*"
+    }
+  }
+}
